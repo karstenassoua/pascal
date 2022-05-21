@@ -29,7 +29,7 @@ dotenv.config({ path: '.env.example' });
  */
 const homeController = require('./controllers/home');
 const userController = require('./controllers/user');
-const subjectController = require('./controllers/subject');
+const bookController = require('./controllers/book');
 const apiController = require('./controllers/api');
 const contactController = require('./controllers/contact');
 
@@ -140,7 +140,7 @@ app.get('/account/unlink/:provider', passportConfig.isAuthenticated, userControl
 /**
  * NEW - Pascal app routes.
  */
-app.get('/subjects/algebra-1', subjectController.getAlg1);
+app.get('/books', bookController.getBooks);
 
 /**
  * API examples routes.
