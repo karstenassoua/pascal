@@ -29,6 +29,7 @@ dotenv.config({ path: '.env.example' });
  */
 const homeController = require('./controllers/home');
 const userController = require('./controllers/user');
+const subjectController = require('./controllers/subject');
 const apiController = require('./controllers/api');
 const contactController = require('./controllers/contact');
 
@@ -135,6 +136,11 @@ app.post('/account/profile', passportConfig.isAuthenticated, userController.post
 app.post('/account/password', passportConfig.isAuthenticated, userController.postUpdatePassword);
 app.post('/account/delete', passportConfig.isAuthenticated, userController.postDeleteAccount);
 app.get('/account/unlink/:provider', passportConfig.isAuthenticated, userController.getOauthUnlink);
+
+/**
+ * NEW - Pascal app routes.
+ */
+app.get('/subjects/algebra-1', subjectController.getAlg1);
 
 /**
  * API examples routes.
