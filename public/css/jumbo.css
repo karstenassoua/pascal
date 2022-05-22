@@ -1,0 +1,8 @@
+.jumbotron {
+  color: white;
+  background-image: url("../peakback.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}

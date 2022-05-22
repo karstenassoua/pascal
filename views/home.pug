@@ -1,26 +1,29 @@
 extends layout
-
 block content
-  h1 Subjects
-  p.lead A boilerplate for Node.js web applications.
-  hr
-  .row
-    .col-md-6
-      h2 Algebra 1
-      p Get comfortable with letters in math — Algebra 1 explores how we can use variables to solve problems through graphing, model situations with functions, take a closer look at inequalities, and understand real-life situations with mathematical expressions.
-        a.btn.btn-primary(href='/subjects/algebra-1', role='button') View details »
-    .col-md-6
-      h2 Geometry
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-primary(href='#', role='button') View details »
-    .col-md-6
-      h2 Algebra 2
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-primary(href='#', role='button') View details »
-    .col-md-6
-      h2 Trigonometry
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-primary(href='#', role='button') View details »
+  .jumbotron.jumbotron-fluid.mb-4(style="padding: 40vh 0;")
+      .container
+          h1.display-4(style="font-weight: 500;") Learn to love mathematics with Pascal.
+          p.lead
+          | Pascal makes practicing and learning math simple, accessible, and fun! From pre-algebra to differential equations, Pascal brings in expert teachers and proven strategies for effective learning.
+  .flex-shrink-0
+    .container.mt-3
+      h1 Math. For real.
+      p.lead Pascal makes practicing and learning math simple, accessible, and fun.
+      hr
+      br
+      .row
+        .col-md-4
+          h2 Teachers Everywhere
+          p With Pascal, get access to a massive database of free classes and instructionals from expert teachers online.
+          p
+            a.btn.btn-warning(href='/lessons', role='button') View lessons »
+        .col-md-4
+          h2 Study a Range of Subjects
+          p No matter if you're studying for AP Calc or Pre-Algebra, Pascal has in-depth guides written for your topic.
+          p
+            a.btn.btn-warning(href='/subjects', role='button') View subjects »
+        .col-md-4
+          h2 Compete with Friends
+          p See how your friends are doing using our Community features! Gain practice points and climb the leaderboard!
+          p
+            a.btn.btn-warning(href='/community', role='button') View Community »
