@@ -2,8 +2,149 @@ extends layout
 
 block content
   .flex-shrink-0
-    .container.mt-3
-      h1 Community coming soon!
+    .container.mt-5
+      h1 Local Leaderboard
       p.lead Compete with your friends and earn practice points!
       hr
-      img.img-fluid(src="/graph.png")
+      br
+      .container
+        .row
+            .col-sm-4
+                .leaderboard-card
+                    .leaderboard-card__top
+                        h3.text-center 2758
+                    .leaderboard-card__body
+                        .text-center
+                            img.circle-img.mb-2(src='img/scarjo.jpeg' alt='User Img')
+                            h5.mb-0 Scarlett Johansson
+                            p.text-muted.mb-0 @scarjo
+                            hr
+                            .d-flex.justify-content-between.align-items-center
+                                span
+                                    i.fa.fa-map-marker
+                                    |  New York, USA
+                                button.btn.btn-outline-success.btn-sm Congratulate
+            .col-sm-4
+                .leaderboard-card.leaderboard-card--first
+                    .leaderboard-card__top
+                        h3.text-center 3050
+                    .leaderboard-card__body
+                        .text-center
+                            img.circle-img.mb-2(src='img/rdj.jpeg' alt='User Img')
+                            h5.mb-0 Robert Downey Jr.
+                            p.text-muted.mb-0 @iamironman
+                            hr
+                            .d-flex.justify-content-between.align-items-center
+                                span
+                                    i.fa.fa-map-marker
+                                    |  New York, USA
+                                button.btn.btn-outline-success.btn-sm Congratulate
+            .col-sm-4
+                .leaderboard-card
+                    .leaderboard-card__top
+                        h3.text-center 2540
+                    .leaderboard-card__body
+                        .text-center
+                            img.circle-img.mb-2(src='img/liz.jpeg' alt='User Img')
+                            h5.mb-0 Elizabeth Olsen
+                            p.text-muted.mb-0 @lizolsen
+                            hr
+                            .d-flex.justify-content-between.align-items-center
+                                span
+                                    i.fa.fa-map-marker
+                                    |  Los Angeles, USA
+                                button.btn.btn-outline-success.btn-sm Congratulate
+        table.table
+            thead
+                tr
+                    th User
+                    th Status
+                    th Location
+                    th Email
+                    th Congratulate
+            tbody
+                tr
+                    td
+                        .d-flex.align-items-center
+                            img.circle-img.circle-img--small.mr-2(style="margin-right: 1em;" src='img/rdj.jpeg' alt='User Img')
+                            .user-info__basic
+                                h5.mb-0 Robert Downey Jr.
+                                p.text-muted.mb-0 @iamironman
+                    td
+                        .d-flex.align-items-baseline
+                            h4(style="margin-right: .5em;") 3050
+                            small.text-success
+                                i.fa.fa-arrow-up(style="margin-right: 5px;")
+                                | 30 pts
+                    td New York, USA
+                    td rdj@mcu.net
+                    td
+                        button.btn.btn-success.btn-sm Congratulate
+                tr
+                    td
+                        .d-flex.align-items-center
+                            img.circle-img.circle-img--small.mr-2(style="margin-right: 1em;" src='img/scarjo.jpeg' alt='User Img')
+                            .user-info__basic
+                                h5.mb-0 Scarlett Johansson
+                                p.text-muted.mb-0 @blackwidow
+                    td
+                        .d-flex.align-items-baseline
+                            h4.mr-1(style="margin-right: .5em;") 2758
+                            small.text-success
+                                i.fa.fa-arrow-up(style="margin-right: 5px;")
+                                | 58 pts
+                    td New York, USA
+                    td scarjo@mcu.net
+                    td
+                        button.btn.btn-success.btn-sm Congratulate
+                tr
+                    td
+                        .d-flex.align-items-center
+                            img.circle-img.circle-img--small.mr-2(style="margin-right: 1em;" src='img/liz.jpeg' alt='User Img')
+                            .user-info__basic
+                                h5.mb-0 Elizabeth Olsen
+                                p.text-muted.mb-0 @lizolsen
+                    td
+                        .d-flex.align-items-baseline
+                            h4.mr-1(style="margin-right: .5em;") 2540
+                            small.text-success
+                                i.fa.fa-arrow-up(style="margin-right: 5px;")
+                                | 100 pts
+                    td Los Angeles, USA
+                    td elolsen@mcu.net
+                    td
+                        button.btn.btn-success.btn-sm Congratulate
+                tr
+                    td
+                        .d-flex.align-items-center
+                            img.circle-img.circle-img--small.mr-2(src='img/hems.jpeg' alt='User Img')
+                            .user-info__basic
+                                h5.mb-0 Chris Hemsworth
+                                p.text-muted.mb-0 @besthemsworth
+                    td
+                        .d-flex.align-items-baseline
+                            h4.mr-1(style="margin-right: .5em;") 1520
+                            small.text-success
+                                i.fa.fa-arrow-up(style="margin-right: 5px;")
+                                | 120 pts
+                    td Byron Bay, Australia
+                    td chhemsworth@mcu.net
+                    td
+                        button.btn.btn-success.btn-sm Congratulate
+                tr
+                    td
+                        .d-flex.align-items-center
+                            img.circle-img.circle-img--small.mr-2(style="margin-right: 1em;" src='img/tomh.jpeg' alt='User Img')
+                            .user-info__basic
+                                h5.mb-0 Tom Hiddleston
+                                p.text-muted.mb-0 @nothemsworth
+                    td
+                        .d-flex.align-items-baseline
+                            h4.mr-1(style="margin-right: 1em;") 950
+                            small.text-danger
+                                i.fa.fa-arrow-down(style="margin-right: 5px;")
+                                | 10 pts
+                    td London, UK
+                    td tmhiddleston@mcu.net
+                    td
+                        button.btn.btn-success.btn-sm Congratulate
